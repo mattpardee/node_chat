@@ -1,5 +1,5 @@
 HOST = "0.0.0.0";
-PORT = process.env.C9_PORT;
+PORT = process.env.VCAP_APP_PORT || process.env.PORT;
 
 // when the daemon started
 var starttime = (new Date()).getTime();
